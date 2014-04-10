@@ -183,6 +183,38 @@ footer {
   bottom:50px;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.threeColDiv {
+  overflow: hidden;
+}
+
+.threeColumnList li {
+  list-style-type: none;
+  width: 33%;
+  float: left;
+  display: inline;
+  line-height: 1.5em;
+}
+
+div.meImg {
+  display: none;
+}
+
+/*
+div.meImg {
+  display: inline-block;
+  width: 50%;
+}
+
+div.meInfo {
+  display: inline-block;
+  width: 50%;
+}
+*/
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
@@ -198,6 +230,8 @@ footer {
   
   header {
     padding-right:320px;
+    display: inline-flex;
+    padding: 8px;
   }
   
   section {
