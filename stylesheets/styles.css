@@ -287,7 +287,8 @@ div.meInfo {
     color:#444;
   }
   a:after{
-    content:" (" attr(href) ") ";
-    font-size:0.8em;font-weight:normal;
+    content: " (" attr(href) ") ";
+    font-size: 0.75em;
+    font-weight: normal;
   }
 }
