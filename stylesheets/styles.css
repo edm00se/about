@@ -25,6 +25,7 @@ html, body {
   margin: 0.5rem;
   background-color: #f3f3f3;
   color: black;
+  line-height: 1;
 }
 
 .grid-item .caption {
@@ -36,6 +37,8 @@ html, body {
   color: #c3c3c3;
   text-align: center;
   font-size: 0.85rem;
+  top: 0.25rem;
+  position: relative;
 }
 
 .profile-image-wrapper {
