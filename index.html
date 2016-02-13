@@ -11,54 +11,29 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="wrapper">
       <header>
         <div class="meInfo">
-          <h1>edm00se.github.io</h1>
-          <p>The user GitHub page for the always-awesome edm00se.</p>
+          <div class="profile-image-wrapper">
+            <img class="img-circle profile-image" src="https://secure.gravatar.com/avatar/397da8c5ae99b2f89a207d9beda6984d?size=160" />
+          </div>
+          <h1>Eric McCormick</h1>
+          <p>Web developer, tinkerer, perpetually bearded.</p>
           <p><a href="http://twitter.com/edm00se" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large">Follow @edm00se</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
           <p class="view"><a href="https://github.com/edm00se">View My GitHub Profile</a></p>
-          <p class="view"><a href="http://stackoverflow.com/users/1720082/eric-mccormick"><img src="http://stackoverflow.com/users/flair/1720082.png?theme=dark" width="208" height="58" alt="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a></p>
+          <p class="view"><a href="http://stackoverflow.com/users/1720082/eric-mccormick"><img src="http://stackoverflow.com/users/flair/1720082.png" width="208" height="58" alt="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a></p>
         </div>
       </header>
-      <section>
-        <h3>
-          <a name="welcome" class="anchor" href="#welcome"><span class="octicon octicon-link"></span></a>Welcome</h3>
-
-          <p>
-            For the development blog related to my day job and my attempts to reconcile my IBM Domino/XPages development with the modern and awesome web (including Express/Node and Angular JS), check out <a href="//edm00se.io/">edm00se.io</a>. I may get a bit wordy and I may challenge the preconceptions of how and how we do development.
-          </p>
-
-          <p>This page, and my GitHub profile for that matter, is nowhere near a complete collection of my works. In fact, most of the more awesome things I do are for businesses, which means that I'm not able to show you them all. I try to contribute in the open source world as much as I can, as I love open source, but you may want to get to know me <span class="italic">before</span> you assume you know all I have to offer. Over time, I plan on highlighting some of the awesomethings that I <span class="italic">can</span> show you, here. They may be from a <a href="http://gist.github.com/edm00se">gist</a> or other sources, but I'll collect them as best as possible.</p>
-          
-          <!--
-          <h3>
-            <a name="twitterFeed" class="anchor" href="#twitterFeed"><span class="octicon octicon-link"></span></a>Twitter Feed
-          </h3>
-          <div class="twitterFeed">
-            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/edm00se" data-widget-id="392680093216026624">Tweets by @edm00se</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
-          -->
-
-          <h3>
-          <a name="elsewhere" class="anchor" href="#elsewhere"><span class="octicon octicon-link"></span></a>Elsewhere</h3>
-
-          <p>I'm all over the internet, so feel free to find me in the wild, where I reside. Some of these places include: <br />
-          <div class="threeColDiv">
-            <ul class="threeColumnList">
-              <li title="to share me"><a href="http://about.me/EricMcCormick">about.me</a></li>
-              <li title="to share some awesome contribution"><a href="http://github.com/edm00se">GitHub</a></li>
-              <li title="to share some awesome bits and pieces"><a href="http://gist.github.com/edm00se">GitHub Gists</a></li>
-              <li title="to share 140 chars of awesome at a time"><a href="http://twitter.com/edm00se">Twitter</a></li>
-              <li title="to show how awesome I am"><a href="http://cv.ericmc.co/">Digital Resume</a></li>
-              <li title="to connect with business people"><a href="http://www.linkedin.com/in/emccormick">LinkedIn</a></li>
-              <li title="yeah, I like their interface"><a href="http://plus.google.com/+EricMcCormickThereCanBeOnlyOne">Google+</a></li>
-              <li title="don't expect to connect unless you're extremely awesome"><a href="http://www.facebook.com/eric.n.mccormick">Facebook</a></li>
-            </ul>
+      <section id="app">
+          <div class="grid">
+            <div class="grid-item" v-for="l in linksAr">
+              <i class="fa {{l.icon}}" ng-show="l.icon"></i>&nbsp;<a href="l.link">{{l.title}}</a>
+              <br /><span class="caption">{{l.descrip}}</span>
+            </div>
           </div>
         </p>
       </section>
@@ -67,18 +42,40 @@
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.min.js"></script>
+    <script type="text/javascript">
+      new Vue({
+          el: '#app',
+          data: { },
+          ready: function() {
+            // GET request
+            this.$http({url: 'links.json', method: 'GET'}).then(function (response) {
+                //console.log(response.status);
+                //console.log(response.headers());
+
+                // set data on vm
+                this.$set('linksAr', response.data.linksAr);
+            }, function (response) {
+              this.$set('linksAr', null);
+                console.log('error: '+response);
+            });
+
+          }
+        });
+    </script>
     <script src="javascripts/scale.fix.js"></script>
     <!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-53207323-1', 'auto');
-ga('send', 'pageview');
+    ga('create', 'UA-53207323-1', 'auto');
+    ga('send', 'pageview');
 
-</script>
-<!-- End Google Analytics -->
+    </script>
+    <!-- End Google Analytics -->
   </body>
 </html>

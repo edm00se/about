@@ -1,14 +1,67 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
+html, body {
+  /* background gradient used from http://uigradients.com/#Mirage */
+  background: #16222A; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #16222A , #3A6073); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #16222A , #3A6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.grid {
+  font-family: calibri;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card, .grid-item {
+  width: 200px;
+  /* border: 1px solid gray; */
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 3px #888;
+  min-height: 60px;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #f3f3f3;
+  color: black;
+}
+
+.grid-item .caption {
+  color: #777777;
+}
+
+.caption {
+  /* color: #9f9f9f; */
+  color: #c3c3c3;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.profile-image-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.profile-image {
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  display: inherit;
+  padding: 1rem;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
 body {
   padding:50px;
   font:18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#c3c3c3;
   font-weight:300;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
   margin:0 0 20px;
 }
 
@@ -33,7 +86,8 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  /* color:#39c; */
+  color: #3bbaf9;
   font-weight:400;
   text-decoration:none;
 }
