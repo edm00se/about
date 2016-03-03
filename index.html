@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <title>edm00se.github.io by edm00se</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -22,21 +21,24 @@
           </div>
           <h1>Eric McCormick</h1>
           <p>Web developer, tinkerer, perpetually bearded.</p>
+          <p>
+            <img class="bg-white" src="http://i.stack.imgur.com/YcEnK.png" alt="IBM Champion">
+            <br /><a href="https://www.ibm.com/developerworks/community/blogs/ibmchampion/entry/announcing_the_2015_class_of_ibm_champions_for_ics?lang=en" rel="nofollow">2015</a>, <a href="https://www.ibm.com/developerworks/community/blogs/ibmchampion/entry/Announcing_the_IBM_Champion_Class_of_2016_for_IBM_Social_Business?lang=en" rel="nofollow">2016</a>
+          </p>
           <p><a href="https://twitter.com/edm00se" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large">Follow @edm00se</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
           <p class="view"><a href="https://github.com/edm00se">View My GitHub Profile</a></p>
           <p class="view"><a href="https://stackoverflow.com/users/1720082/eric-mccormick"><img src="https://stackoverflow.com/users/flair/1720082.png" width="208" height="58" alt="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a></p>
         </div>
       </header>
       <section id="app">
-          <div class="grid">
-            <div class="grid-item" v-for="l in linksAr">
-              <i class="fa {{l.icon}}" ng-show="l.icon"></i>&nbsp;<a href="l.link">{{l.title}}</a>
-              <br /><span class="caption">{{l.descrip}}</span>
-            </div>
+        <div class="grid">
+          <div class="grid-item" v-for="l in linksAr">
+            <i class="fa {{l.icon}}" ng-show="l.icon"></i>&nbsp;<a href="l.link">{{l.title}}</a>
+            <br /><span class="caption">{{l.descrip}}</span>
           </div>
+        </div>
       </section>
-
       <footer>
         <p><small><i class="fa fa-github-alt"></i>&nbsp;Hosted on GitHub Pages</small></p>
       </footer>
@@ -44,24 +46,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.min.js"></script>
     <script type="text/javascript">
-      new Vue({
-          el: '#app',
-          data: { },
-          ready: function() {
-            // GET request
-            this.$http({url: 'links.json', method: 'GET'}).then(function (response) {
-                //console.log(response.status);
-                //console.log(response.headers());
-
-                // set data on vm
-                this.$set('linksAr', response.data.linksAr);
-            }, function (response) {
-              this.$set('linksAr', null);
-                console.log('error: '+response);
-            });
-
-          }
-        });
+    new Vue({
+    el: '#app',
+    data: { },
+    ready: function() {
+    // GET request
+    this.$http({url: 'links.json', method: 'GET'}).then(function (response) {
+    //console.log(response.status);
+    //console.log(response.headers());
+    // set data on vm
+    this.$set('linksAr', response.data.linksAr);
+    }, function (response) {
+    this.$set('linksAr', null);
+    console.log('error: '+response);
+    });
+    }
+    });
     </script>
     <script src="javascripts/scale.fix.js"></script>
     <!-- Google Analytics -->
@@ -70,10 +70,8 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-53207323-1', 'auto');
     ga('send', 'pageview');
-
     </script>
     <!-- End Google Analytics -->
   </body>
