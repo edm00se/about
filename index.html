@@ -44,14 +44,14 @@
         </footer>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.21/vue.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.13/vue-router.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.min.js"></script>
       <script type="text/javascript">
         new Vue({
           el: '#app',
           data: { },
           ready: function() {
             // GET request
-            Vue.$http({url: 'links.json', method: 'GET'}).then(function (response) {
+            this.$http({url: 'links.json', method: 'GET'}).then(function (response) {
                 //console.log(response.status);
                 //console.log(response.headers());
 
