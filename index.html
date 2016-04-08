@@ -43,15 +43,15 @@
           <p><small><i class="fa fa-github-alt"></i>&nbsp;Hosted on GitHub Pages</small></p>
         </footer>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.0/vue-router.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.21/vue.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.13/vue-router.min.js"></script>
       <script type="text/javascript">
         new Vue({
           el: '#app',
           data: { },
           ready: function() {
             // GET request
-            this.$http({url: 'links.json', method: 'GET'}).then(function (response) {
+            Vue.$http({url: 'links.json', method: 'GET'}).then(function (response) {
                 //console.log(response.status);
                 //console.log(response.headers());
 
