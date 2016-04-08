@@ -34,7 +34,7 @@
         <section id="app">
           <div class="grid">
             <div class="grid-item" v-for="l in linksAr">
-            <i class="fa {{l.icon}}" ng-show="l.icon"></i>&nbsp;<a href="l.link">{{l.title}}</a>
+            <i class="fa {{l.icon}}" ng-show="{{l.icon}}"></i>&nbsp;<a href="{{l.link}}">{{l.title}}</a>
               <br /><span class="caption">{{l.descrip}}</span>
             </div>
           </div>
