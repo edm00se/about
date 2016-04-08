@@ -34,7 +34,7 @@
         <section id="app">
           <div class="grid">
             <div class="grid-item" v-for="l in linksAr">
-              <i class="fa {{l.icon}}" ng-show="l.icon"></i>&nbsp;<a href="l.link">{{l.title}}</a>
+            <i class="fa {{l.icon}}" ng-show="l.icon"></i>&nbsp;<a href="l.link">{{l.title}}</a>
               <br /><span class="caption">{{l.descrip}}</span>
             </div>
           </div>
@@ -43,28 +43,28 @@
           <p><small><i class="fa fa-github-alt"></i>&nbsp;Hosted on GitHub Pages</small></p>
         </footer>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.21/vue.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.13/vue-router.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.0/vue-router.min.js"></script>
       <script type="text/javascript">
         new Vue({
           el: '#app',
           data: { },
           ready: function() {
-            var vm = this;
             // GET request
-            vm.$http({url: 'links.json', method: 'GET'}).then(function (response) {
-            //console.log(response.status);
-            //console.log(response.headers());
-            // set data on vm
-            vm.$set('linksAr', response.data.linksAr);
-            console.table(response.data.linksAr);
-          }, function (response) {
-            vm.$set('linksAr', null);
-            console.log('error: '+response);
-          });
-        }
-      });
-      </script>
+            this.$http({url: 'links.json', method: 'GET'}).then(function (response) {
+                //console.log(response.status);
+                //console.log(response.headers());
+
+                // set data on vm
+                this.$set('linksAr', response.data.linksAr);
+                console.table(response.data.linksAr);
+            }, function (response) {
+              this.$set('linksAr', null);
+                console.log('error: '+response);
+            });
+          }
+        });
+    </script>
     <script src="javascripts/scale.fix.js"></script>
     <!-- Google Analytics -->
     <script>
