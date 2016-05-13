@@ -7,6 +7,7 @@
     { "title": "Twitter", "link": "https://twitter.com/edm00se", "icon": "fa-twitter", "descrip": "I'm a big fan of twitter and it's probably one of the easiest ways to get ahold of me." },
     { "title": "CV", "link": "http://cv.ericmc.co", "icon": "fa-file-text-o", "descrip": "Everyone has one parked somewhere." },
     { "title": "LinkedIn", "link": "http://www.linkedin.com/in/emccormick", "icon": "fa-linkedin", "descrip": "For business and professional connections." },
-    { "title": "Google+", "link": "https://plus.google.com/+EricMcCormickThereCanBeOnlyOne", "icon": "fa-google-plus", "descrip": "Google services (including +) are handy, also another contact medium." }
+    { "title": "Google+", "link": "https://plus.google.com/+EricMcCormickThereCanBeOnlyOne", "icon": "fa-google-plus", "descrip": "Google services (including +) are handy, also another contact medium." },
+    { "title": "edm00.se", "link": "https://edm00.se/", "icon": "fa-external-link", "descrip": "A personal, mock URL shortener, which performs redirects when used like an api, or provides a simplistic UI for browsing and navigating. Build using Node+Express and EJS templating." }
   ]
 }
