@@ -1,13 +1,14 @@
 {
   "linksAr": [
     { "title": "Dev Blog", "link": "https://edm00se.io/", "icon": "fa-pencil", "descrip": "My development blog, on all things IBM XPages, Java, Node.js, AngularJS, and more." },
-    { "title": "about.me", "link": "http://about.me/EricMcCormick", "icon": "fa-user", "descrip": "About.me for an expanded description on who I am." },
+    { "title": "IoT + Raspberry Pi μ blog", "link": "https://edm00se.github.io/iot-pi/", "icon": "fa-rocket", "descrip": "A single-purpose blog relating to my efforts in the intersections of IoT, Raspberry Pi, and cloud computing spaces." },
     { "title": "GitHub", "link": "https://github.com/edm00se", "icon": "fa-github", "descrip": "I love open source and coding. You can find a number of my projects and contributions here." },
     { "title": "GitHub Gists", "link": "https://gist.github.com/edm00se", "icon": "fa-github-alt", "descrip": "Sometimes just quick thoughts, references, or backing snippets to my blog." },
     { "title": "Twitter", "link": "https://twitter.com/edm00se", "icon": "fa-twitter", "descrip": "I'm a big fan of twitter and it's probably one of the easiest ways to get ahold of me." },
     { "title": "CV", "link": "http://cv.ericmc.co", "icon": "fa-file-text-o", "descrip": "Everyone has one parked somewhere." },
     { "title": "LinkedIn", "link": "http://www.linkedin.com/in/emccormick", "icon": "fa-linkedin", "descrip": "For business and professional connections." },
     { "title": "Google+", "link": "https://plus.google.com/+EricMcCormickThereCanBeOnlyOne", "icon": "fa-google-plus", "descrip": "Google services (including +) are handy, also another contact medium." },
-    { "title": "edm00.se", "link": "https://edm00.se/", "icon": "fa-external-link", "descrip": "A personal, mock URL shortener, which performs redirects when used like an api, or provides a simplistic UI for browsing and navigating. Build using Node+Express and EJS templating." }
+    { "title": "edm00.se", "link": "https://edm00.se/", "icon": "fa-external-link", "descrip": "A personal, mock URL shortener, which performs redirects when used like an api, or provides a simplistic UI for browsing and navigating. Build using Node+Express and EJS templating." },
+    { "title": "about.me", "link": "http://about.me/EricMcCormick", "icon": "fa-user", "descrip": "About.me for an expanded description on who I am." }
   ]
 }
