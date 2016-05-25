@@ -31,73 +31,68 @@
               </a>
             </div>
           </p>
-            <p class="view">
-              <a href="https://github.com/edm00se">View My GitHub Profile</a>
-            </p>
-            <p class="view">
-              <a href="https://stackoverflow.com/users/1720082/eric-mccormick">
-                <img src="https://stackoverflow.com/users/flair/1720082.png" width="208" height="58" alt="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-              </a>
-            </p>
-          </div>
-        </header>
-        <section id="app">
-          <div class="grid" v-if="linksAr">
-            <div class="grid-item" v-for="l in linksAr">
+          <p class="view">
+            <a href="https://github.com/edm00se">View My GitHub Profile</a>
+          </p>
+          <p class="view">
+            <a href="https://stackoverflow.com/users/1720082/eric-mccormick">
+                <img src="https://stackoverflow.com/users/flair/1720082.png" width="208" height="58" alt="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+          </p>
+        </div>
+      </header>
+      <section id="app">
+        <div class="grid" v-if="linksAr">
+          <div class="grid-item" v-for="l in linksAr">
             <i class="fa {{l.icon}}" ng-show="{{l.icon}}"></i>&nbsp;<a href="{{l.link}}">{{l.title}}</a>
               <br /><span class="caption">{{l.descrip}}</span>
-            </div>
           </div>
-        </section>
-        <footer>
-          <p><small><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAhUlEQVQIHQXBoS6AARSA0fNTTKYIqibYKDZJVhXN5gVUm+oFbDZZEUXTvimmSd7AZpJs1zkAWm0FAHTcZ9P02i6g2x77apo+eu4cHTVttrS00F7Tll76bgForelKP70D0NL0oKf+Wgdou+lS+9113wl00W/TBrrpoE3orekU0GFn0HU78A9ibEyhxF2wigAAAABJRU5ErkJggg==" alt="octocat">&nbsp;Hosted on GitHub Pages</small></p>
-        </footer>
-      </div>
-      <script src="./javascripts/combined.js"></script>
-      <script type="text/javascript">
+        </div>
+      </section>
+      <footer>
+        <p><small><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAhUlEQVQIHQXBoS6AARSA0fNTTKYIqibYKDZJVhXN5gVUm+oFbDZZEUXTvimmSd7AZpJs1zkAWm0FAHTcZ9P02i6g2x77apo+eu4cHTVttrS00F7Tll76bgForelKP70D0NL0oKf+Wgdou+lS+9113wl00W/TBrrpoE3orekU0GFn0HU78A9ibEyhxF2wigAAAABJRU5ErkJggg==" alt="octocat">&nbsp;Hosted on GitHub Pages</small></p>
+      </footer>
+    </div>
+    <script src="./javascripts/combined.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        // define Vue.js app
         new Vue({
           el: '#app',
           data: { },
           ready: function() {
             // GET request
             this.$http({url: 'links.json', method: 'GET'}).then(function (response) {
-                //console.log(response.status);
-                //console.log(response.headers());
-
                 // set data on vm
                 this.$set('linksAr', response.data.linksAr);
                 //console.table(response.data.linksAr);
             }, function (response) {
               this.$set('linksAr', null);
-                console.log('error: '+response);
+                console.error(response);
             });
           }
         });
+      // aysnc, late loading, custom fonts
+      WebFontConfig = {
+        google: { families: [ 'Lato:300italic,700italic,300,700' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      (function(){
+        var h = document.getElementsByTagName('head')[0];
+        var l = document.createElement('link');
+        l.href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
+        l.rel="stylesheet";
+        h.appendChild(l);
+      })();
+      //]]>
     </script>
-    <script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Lato:300italic,700italic,300,700' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
-  <script type='text/javascript'>
-//<![CDATA[
-(function(){
-  var h = document.getElementsByTagName('head')[0];
-  var l = document.createElement('link');
-  l.href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
-  l.rel="stylesheet";
-  h.appendChild(l);
-})();
-//]]>
-</script>
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
