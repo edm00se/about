@@ -306,7 +306,7 @@ footer {
   width:270px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:1rem;
 }
 
 .italic {
@@ -355,13 +355,14 @@ div.meInfo {
   }
 
   header {
-    padding-right:320px;
-    display: inline-flex;
     padding: 8px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
   }
 
   section {
-    border:1px solid #e5e5e5;
+    border-top:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
@@ -385,6 +386,10 @@ div.meInfo {
 
   header {
     padding:0;
+    /* padding: 8px; */
+    display: inline-block;
+    text-align: center;
+    width: 100%;
   }
 
   header ul, header p.view {
@@ -399,6 +404,13 @@ div.meInfo {
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
+  }
+
+  header {
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
   }
 
   header ul {
