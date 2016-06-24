@@ -4,6 +4,7 @@
     { "title": "IoT + Raspberry Pi μ blog", "link": "https://edm00se.github.io/iot-pi/", "icon": "fa-rocket", "descrip": "A single-purpose blog relating to my efforts in the intersections of IoT, Raspberry Pi, Node, and cloud computing spaces." },
     { "title": "GitHub", "link": "https://github.com/edm00se", "icon": "fa-github", "descrip": "I love open source and coding. You can find a number of my projects and contributions here." },
     { "title": "GitHub Gists", "link": "https://gist.github.com/edm00se", "icon": "fa-github-alt", "descrip": "Sometimes just quick thoughts, references, or backing snippets to my blog." },
+    { "title": "Projects Rollup", "link": "https://github.com/edm00se/projects", "icon": "fa-flask", "descrip": "A roll-up of some of my side projects and exploratory ventures." },
     { "title": "Twitter", "link": "https://twitter.com/edm00se", "icon": "fa-twitter", "descrip": "I'm a big fan of twitter and it's probably one of the easiest ways to get ahold of me." },
     { "title": "CV", "link": "http://cv.ericmc.co", "icon": "fa-file-text-o", "descrip": "Everyone has one parked somewhere." },
     { "title": "LinkedIn", "link": "http://www.linkedin.com/in/emccormick", "icon": "fa-linkedin", "descrip": "For business and professional connections." },

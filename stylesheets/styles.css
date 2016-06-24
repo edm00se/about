@@ -1,5 +1,9 @@
 /* @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700); */
 
+[v-cloak] {
+  display: none;
+}
+
 .gh-octo-minion {
   width: 10px;
 }
