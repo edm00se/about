@@ -48,9 +48,12 @@
         </div>
       </header>
       <section id="app">
-        <div class="grid" v-cloak v-if="linksAr">
-          <div class="grid-item" v-for="l in linksAr">
-            <i class="fa {{l.icon}}" ng-show="{{l.icon}}"></i>&nbsp;<a href="{{l.link}}">{{l.title}}</a>
+        <div v-show="loading" class="v-cloak--block grid">
+          <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <div v-cloak class="v-cloak--hidden grid" v-show="!loading">
+          <div v-cloak class="grid-item" v-for="l in linksAr">
+            <i v-cloak class="fa {{l.icon}}" ng-show="{{l.icon}}"></i>&nbsp;<a href="{{l.link}}">{{l.title}}</a>
               <br /><span class="caption">{{l.descrip}}</span>
           </div>
         </div>
