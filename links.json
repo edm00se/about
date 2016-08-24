@@ -1,15 +1,15 @@
 {
   "linksAr": [
-    { "title": "Dev Blog", "link": "https://edm00se.io/", "icon": "fa-pencil", "descrip": "My development blog, on all things IBM XPages, Java, Node.js, AngularJS, and more." },
-    { "title": "IoT + Raspberry Pi μ blog", "link": "https://edm00se.github.io/iot-pi/", "icon": "fa-rocket", "descrip": "A single-purpose blog relating to my efforts in the intersections of IoT, Raspberry Pi, Node, and cloud computing spaces." },
-    { "title": "Projects Rollup", "link": "https://github.com/edm00se/projects#readme", "icon": "fa-flask", "descrip": "A roll-up of some of my side projects and exploratory ventures." },
-    { "title": "Presentations Rollup", "link": "https://github.com/edm00se/presentations#readme", "icon": "fa-microphone", "descrip": "A roll-up of some of my notable presentations given at user group meetups and conferences." },
-    { "title": "GitHub", "link": "https://github.com/edm00se", "icon": "fa-github", "descrip": "I love open source and coding. You can find a number of my projects and contributions here." },
-    { "title": "GitHub Gists", "link": "https://gist.github.com/edm00se", "icon": "fa-github-alt", "descrip": "Sometimes just quick thoughts, references, or backing snippets to my blog." },
-    { "title": "CV", "link": "http://cv.ericmc.co", "icon": "fa-file-text-o", "descrip": "Everyone has one parked somewhere." },
-    { "title": "Twitter", "link": "https://twitter.com/edm00se", "icon": "fa-twitter", "descrip": "I'm a big fan of twitter and it's probably one of the easiest ways to get ahold of me." },
-    { "title": "LinkedIn", "link": "http://www.linkedin.com/in/emccormick", "icon": "fa-linkedin", "descrip": "For business and professional connections." },
-    { "title": "Google+", "link": "https://plus.google.com/+EricMcCormickThereCanBeOnlyOne", "icon": "fa-google-plus", "descrip": "Google services (including +) are handy, also another contact medium." },
-    { "title": "about.me", "link": "http://about.me/EricMcCormick", "icon": "fa-user", "descrip": "About.me for an expanded description on who I am." }
+    { "title": "Dev Blog", "link": "https://edm00.se/blog", "icon": "fa-pencil", "descrip": "My development blog, on all things IBM XPages, Java, Node.js, AngularJS, and more." },
+    { "title": "IoT + Raspberry Pi μ blog", "link": "https://edm00.se/iot-pi", "icon": "fa-rocket", "descrip": "A single-purpose blog relating to my efforts in the intersections of IoT, Raspberry Pi, Node, and cloud computing spaces." },
+    { "title": "Projects Rollup", "link": "https://edm00.se/projects", "icon": "fa-flask", "descrip": "A roll-up of some of my side projects and exploratory ventures." },
+    { "title": "Presentations Rollup", "link": "https://edm00.se/presentations", "icon": "fa-microphone", "descrip": "A roll-up of some of my notable presentations given at user group meetups and conferences." },
+    { "title": "GitHub", "link": "https://edm00.se/gh", "icon": "fa-github", "descrip": "I love open source and coding. You can find a number of my projects and contributions here." },
+    { "title": "GitHub Gists", "link": "https://edm00.se/gist", "icon": "fa-github-alt", "descrip": "Sometimes just quick thoughts, references, or backing snippets to my blog." },
+    { "title": "CV", "link": "https://edm00.se/cv", "icon": "fa-file-text-o", "descrip": "Everyone has one parked somewhere." },
+    { "title": "Twitter", "link": "https://edm00.se/twitter", "icon": "fa-twitter", "descrip": "I'm a big fan of twitter and it's probably one of the easiest ways to get ahold of me." },
+    { "title": "LinkedIn", "link": "https://edm00.se/linkedin", "icon": "fa-linkedin", "descrip": "For business and professional connections." },
+    { "title": "Google+", "link": "https://edm00.se/gplus", "icon": "fa-google-plus", "descrip": "Google services (including +) are handy, also another contact medium." },
+    { "title": "about.me", "link": "https://edm00.se/about", "icon": "fa-user", "descrip": "About.me for an expanded description on who I am." }
   ]
 }
