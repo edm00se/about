@@ -7,31 +7,30 @@
 <body>
 <div id="gist_embed"></div>
 <script>
-window.addEventListener('message', receiveMessage, false);
-function receiveMessage(event)
-{
-	if (event.data) {
-		var msg;
-		try {
-			msg = JSON.parse(event.data);
-		} catch (err) {
-			// Do nothing
-		}
-		if (!msg)
-			return false;
+  function receiveMessage(event){
+    if (event.data) {
+      var msg;
+      try {
+        msg = JSON.parse(event.data);
+      } catch (err) {
+        // Do nothing
+      }
+      if (!msg)
+        return false;
 
-		if (msg.name === 'resize') {
-			window.parent.postMessage({
-			  sentinel: 'amp',
-			  type: 'embed-size',
-			  height: msg.data.height
-			}, '*');
-		}
-	}
-}
+      if (msg.name === 'resize') {
+        window.parent.postMessage({
+          sentinel: 'amp',
+          type: 'embed-size',
+          height: msg.data.height
+        }, '*');
+      }
+    }
+  }
+  window.addEventListener('message', receiveMessage, false);
 </script>
 <script>
-	function getQueryVariable(variable) {
+  function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split('&');
     for (var i=0;i<vars.length;i++) {
@@ -41,9 +40,9 @@ function receiveMessage(event)
       }
     }
     return(false);
-	}
-	(function() {
-		var d = document, s = d.createElement('script');
+  }
+  (function() {
+    var d = document, s = d.createElement('script');
     var id = getQueryVariable("id");
     var fName = getQueryVariable("fileName");
 
@@ -51,11 +50,23 @@ function receiveMessage(event)
     if( fName != '' ){
       mySrc += '?file=' + fName;
     }
-		s.src = mySrc;
+    s.src = mySrc;
     s.type = 'text/javascript';
 
     document.getElementById('gist_embed').appendChild(s);
-	})();
+
+  })();
+</script>
+<script defer>
+  window.setTimeout(function(){
+    var val = document.getElementById('gist_embed').scrollHeight;
+    // console.log('should reset iframe height to ' + val);
+    window.parent.postMessage({
+      sentinel: 'amp',
+      type: 'embed-size',
+      height: val
+    }, '*');
+  }, 500);
 </script>
 </body>
 </html>
