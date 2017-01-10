@@ -2,8 +2,8 @@
   "linksAr": [
     { "title": "Dev Blog", "link": "https://edm00.se/blog", "icon": "fa-pencil", "descrip": "My development blog, on all things IBM XPages, Java, Node.js, AngularJS, and more." },
     { "title": "AMA", "link": "https://github.com/edm00se/ama", "icon": "fa-question-circle-o", "descrip": "Ask Me (Nearly) Anything" },
-    { "title": "Projects Rollup", "link": "https://edm00.se/projects", "icon": "fa-flask", "descrip": "A roll-up of some of my side projects and exploratory ventures." },
-    { "title": "Presentations Rollup", "link": "https://edm00.se/presentations", "icon": "fa-microphone", "descrip": "A roll-up of some of my notable presentations given at user group meetups and conferences." },
+    { "title": "Projects", "link": "https://edm00.se/projects", "icon": "fa-flask", "descrip": "A roll-up of some of my side projects and exploratory ventures." },
+    { "title": "Presentations", "link": "https://edm00.se/presentations", "icon": "fa-microphone", "descrip": "A roll-up of some of my notable presentations given at user group meetups and conferences." },
     { "title": "GitHub", "link": "https://edm00.se/gh", "icon": "fa-github", "descrip": "I love open source and coding. You can find a number of my projects and contributions here." },
     { "title": "GitHub Gists", "link": "https://edm00.se/gist", "icon": "fa-github-alt", "descrip": "Sometimes just quick thoughts, references, or backing snippets to my blog." },
     { "title": "CV", "link": "https://edm00.se/cv", "icon": "fa-file-text-o", "descrip": "Everyone has one parked somewhere." },
