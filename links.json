@@ -8,7 +8,6 @@
     { "title": "CV", "link": "https://edm00.se/cv", "icon": "fa-file-text-o", "descrip": "Everyone has one parked somewhere." },
     { "title": "Twitter", "link": "https://edm00.se/twitter", "icon": "fa-twitter", "descrip": "I'm a big fan of twitter and it's probably one of the easiest ways to get ahold of me." },
     { "title": "LinkedIn", "link": "https://edm00.se/linkedin", "icon": "fa-linkedin", "descrip": "For business and professional connections." },
-    { "title": "Google+", "link": "https://edm00.se/gplus", "icon": "fa-google-plus", "descrip": "Google services (including +) are handy, also another contact medium." },
-    { "title": "about.me", "link": "https://edm00.se/about", "icon": "fa-user", "descrip": "About.me for an expanded description on who I am." }
+    { "title": "Google+", "link": "https://edm00.se/gplus", "icon": "fa-google-plus", "descrip": "Google services (including +) are handy, also another contact medium." }
   ]
 }
