@@ -1,7 +1,7 @@
 {
   "linksAr": [
     { "title": "Dev Blog", "link": "https://edm00.se/blog", "icon": "fa-pencil", "descrip": "My development blog, on all things IBM XPages, Java, Node.js, AngularJS, and more." },
-    { "title": "AMA", "link": "https://github.com/edm00se/ama", "icon": "fa-question-circle-o", "descrip": "Ask Me (Nearly) Anything" },
+    { "title": "AMA", "link": "https://edm00.se/ama", "icon": "fa-question-circle-o", "descrip": "Ask Me (Nearly) Anything" },
     { "title": "Presentations", "link": "https://edm00.se/presentations", "icon": "fa-microphone", "descrip": "A roll-up of some of my notable presentations given at user group meetups and conferences." },
     { "title": "GitHub", "link": "https://edm00.se/gh", "icon": "fa-github", "descrip": "I love open source and coding. You can find a number of my projects and contributions here." },
     { "title": "GitHub Gists", "link": "https://edm00.se/gist", "icon": "fa-github-alt", "descrip": "Sometimes just quick thoughts, references, or backing snippets to my blog." },
