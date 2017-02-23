@@ -10,6 +10,26 @@
     <noscript><link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,700,700italic' rel='stylesheet' type='text/css'></noscript>
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'></noscript>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="midnightblue">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -22,10 +42,10 @@
             <img class="circle profile-image" src="https://secure.gravatar.com/avatar/397da8c5ae99b2f89a207d9beda6984d?size=160" />
           </div>
           <h1>Eric McCormick</h1>
-          <p>Full-stack web developer, tinkerer, perpetually bearded.</p>
+          <p>Web Developer, full-stack JavaScript and Java, perpetually bearded.</p>
           <p>
             <img class="bg-white" src="images/ibm_champion.png" alt="IBM Champion">
-            <br /><a href="https://www.ibm.com/developerworks/community/blogs/ibmchampion/entry/announcing_the_2015_class_of_ibm_champions_for_ics?lang=en" rel="nofollow">2015</a>, <a href="https://www.ibm.com/developerworks/community/blogs/ibmchampion/entry/Announcing_the_IBM_Champion_Class_of_2016_for_IBM_Social_Business?lang=en" rel="nofollow">2016</a>
+            <br /><a href="https://www.ibm.com/developerworks/community/blogs/ibmchampion/entry/announcing_the_2015_class_of_ibm_champions_for_ics?lang=en" rel="nofollow">2015</a>, <a href="https://www.ibm.com/developerworks/community/blogs/ibmchampion/entry/Announcing_the_IBM_Champion_Class_of_2016_for_IBM_Social_Business?lang=en" rel="nofollow">2016</a>, <a href="https://www.ibm.com/developerworks/community/blogs/762e655e-e86c-4624-9662-ee81c6874de1/entry/Introducing_the_2017_IBM_Champions" rel="nofollow">2017</a>.
           </p>
           <p>
             <div class="tweet-widget">
@@ -42,9 +62,6 @@
             <a href="https://stackoverflow.com/users/1720082/eric-mccormick">
                 <img src="https://stackoverflow.com/users/flair/1720082.png" width="208" height="58" alt="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Eric McCormick at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
           </p>
-          <!-- <footer>
-            <p><small><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAhUlEQVQIHQXBoS6AARSA0fNTTKYIqibYKDZJVhXN5gVUm+oFbDZZEUXTvimmSd7AZpJs1zkAWm0FAHTcZ9P02i6g2x77apo+eu4cHTVttrS00F7Tll76bgForelKP70D0NL0oKf+Wgdou+lS+9113wl00W/TBrrpoE3orekU0GFn0HU78A9ibEyhxF2wigAAAABJRU5ErkJggg==" alt="octocat">&nbsp;Hosted on GitHub Pages</small></p>
-          </footer> -->
         </div>
       </header>
       <section id="app">
@@ -59,6 +76,16 @@
         </div>
       </section>
     </div>
+    <script type="text/javascript">
+     var swsource = "/sw.js";
+     if("serviceWorker" in navigator) {
+         navigator.serviceWorker.register(swsource).then(function(reg){
+             console.log('ServiceWorker scope: ', reg.scope);
+         }).catch(function(err) {
+             console.log('ServiceWorker registration failed: ', err);
+         });
+     };
+   </script>
     <script type="text/javascript">
       //<![CDATA[
       !function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",[
