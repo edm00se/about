@@ -6,7 +6,7 @@
 </head>
 <body>
 <div id="disqus_thread"></div>
-<script>
+<script data-cfasync="false">
 window.addEventListener('message', receiveMessage, false);
 function receiveMessage(event)
 {
@@ -30,7 +30,7 @@ function receiveMessage(event)
 	}
 }
 </script>
-<script>
+<script data-cfasync="false">
 	function getQueryVariable(variable)
 	{
 		   var query = window.location.search.substring(1);
